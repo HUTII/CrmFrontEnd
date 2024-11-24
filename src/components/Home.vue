@@ -14,24 +14,24 @@
             </v-card-title>
             <v-row>
                 <v-col cols="6">
-                    <v-card dark>
+                    <v-card>
                         <v-card-title>Travel</v-card-title>
                     </v-card>
                 </v-col>
                 <v-col cols="6">
-                    <v-card dark>
+                    <v-card>
                         <v-card-title>Accident</v-card-title>
                     </v-card>
                 </v-col>
             </v-row>
             <v-row>
                 <v-col cols="6">
-                    <v-card dark>
+                    <v-card>
                         <v-card-title>Medical</v-card-title>
                     </v-card>
                 </v-col>
                 <v-col cols="6">
-                    <v-card dark>
+                    <v-card>
                         <v-card-title>Car</v-card-title>
                     </v-card>
                 </v-col>
