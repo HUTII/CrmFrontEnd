@@ -1,9 +1,11 @@
 import { createWebHistory, createRouter } from 'vue-router'
+import mainView from './mainView'
 
 const routes = [
   {
     path: '/',
-    component: () => import('@/components/Home.vue')
+    component: () => import('@/components/MainView.vue'),
+    children: mainView
   }
 ]
 
