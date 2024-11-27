@@ -9,15 +9,15 @@
                     <v-col cols="8">
                         <v-card-title>{{ medicalInsurance.planName }}</v-card-title>
                         <v-card-text class="pl-0">
-                            有效期限： {{ medicalInsurance.effectPeriod }}<br>
-                            适用年龄： {{ medicalInsurance.applicablePopulation }}<br><br>
-                            
-                            criticalIllness：  {{ medicalInsurance.criticalIllness }}<br>
-                            emergencyAssistance：  {{ medicalInsurance.emergencyAssistance }}<br>
-                            hospitalCoverage：  {{ medicalInsurance.hospitalCoverage }}<br>
-                            outpatientCoverage：  {{ medicalInsurance.outpatientCoverage }}<br>
-                            companyName：  {{ medicalInsurance.companyName }}<br>
-                            surgeryCoverage：  {{ medicalInsurance.surgeryCoverage }}<br>
+                            生效期限（单位：天）： {{ medicalInsurance.effectPeriod }}<br>
+                            适用人群： {{ medicalInsurance.applicablePopulation }}<br><br>
+
+                            重疾覆盖额度：  {{ medicalInsurance.criticalIllness }}<br>
+                            紧急救援：  {{ medicalInsurance.emergencyAssistance }}<br>
+                            医疗覆盖额度：  {{ medicalInsurance.hospitalCoverage }}<br>
+                            门诊覆盖额度：  {{ medicalInsurance.outpatientCoverage }}<br>
+                            保险公司名称：  {{ medicalInsurance.companyName }}<br>
+                            手术覆盖额度：  {{ medicalInsurance.surgeryCoverage }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
@@ -33,24 +33,24 @@
             <v-card-item>
                 <v-row>
                     <v-col cols="2">
-                        <v-img :src="getImageSrc(nearestMedicalInsurance.id)" height="200" width="200"></v-img>
+                        <v-img :src="getImageSrc(nearestmedicalInsurance.id)" height="200" width="200"></v-img>
                     </v-col>
                     <v-col cols="8">
-                        <v-card-title>{{ nearestMedicalInsurance.planName }}</v-card-title>
+                        <v-card-title>{{ nearestmedicalInsurance.planName }}</v-card-title>
                         <v-card-text class="pl-0">
-                            有效期限： {{ nearestMedicalInsurance.effectPeriod }}<br>
-                            适用年龄： {{ nearestMedicalInsurance.applicablePopulation }}<br><br>
-                            
-                            criticalIllness：  {{ nearestMedicalInsurance.criticalIllness }}<br>
-                            emergencyAssistance：  {{ nearestMedicalInsurance.emergencyAssistance }}<br>
-                            hospitalCoverage：  {{ nearestMedicalInsurance.hospitalCoverage }}<br>
-                            outpatientCoverage：  {{ nearestMedicalInsurance.outpatientCoverage }}<br>
-                            companyName：  {{ nearestMedicalInsurance.companyName }}<br>
-                            surgeryCoverage：  {{ nearestMedicalInsurance.surgeryCoverage }}<br>
+                            生效期限（单位：天）： {{ nearestmedicalInsurance.effectPeriod }}<br>
+                            适用人群： {{ nearestmedicalInsurance.applicablePopulation }}<br><br>
+
+                            重疾覆盖额度：  {{ nearestmedicalInsurance.criticalIllness }}<br>
+                            紧急救援：  {{ nearestmedicalInsurance.emergencyAssistance }}<br>
+                            医疗覆盖额度：  {{ nearestmedicalInsurance.hospitalCoverage }}<br>
+                            门诊覆盖额度：  {{ nearestmedicalInsurance.outpatientCoverage }}<br>
+                            保险公司名称：  {{ nearestmedicalInsurance.companyName }}<br>
+                            手术覆盖额度：  {{ nearestmedicalInsurance.surgeryCoverage }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
-                        <span class="price">￥{{ nearestMedicalInsurance.price }}</span>
+                        <span class="price">￥{{ nearestmedicalInsurance.price }}</span>
                     </v-col>
                 </v-row>
             </v-card-item>
@@ -62,24 +62,24 @@
             <v-card-item>
                 <v-row>
                     <v-col cols="2">
-                        <v-img :src="getImageSrc(associatedMedicalInsurance.id)" height="200" width="200"></v-img>
+                        <v-img :src="getImageSrc(associatedmedicalInsurance.id)" height="200" width="200"></v-img>
                     </v-col>
                     <v-col cols="8">
-                        <v-card-title>{{ associatedMedicalInsurance.planName }}</v-card-title>
+                        <v-card-title>{{ associatedmedicalInsurance.planName }}</v-card-title>
                         <v-card-text class="pl-0">
-                            有效期限： {{ associatedMedicalInsurance.effectPeriod }}<br>
-                            适用年龄： {{ associatedMedicalInsurance.applicablePopulation }}<br><br>
-                            
-                            criticalIllness：  {{ associatedMedicalInsurance.criticalIllness }}<br>
-                            emergencyAssistance：  {{ associatedMedicalInsurance.emergencyAssistance }}<br>
-                            hospitalCoverage：  {{ associatedMedicalInsurance.hospitalCoverage }}<br>
-                            outpatientCoverage：  {{ associatedMedicalInsurance.outpatientCoverage }}<br>
-                            companyName：  {{ associatedMedicalInsurance.companyName }}<br>
-                            surgeryCoverage：  {{ associatedMedicalInsurance.surgeryCoverage }}<br>
+                            生效期限（单位：天）： {{ associatedmedicalInsurance.effectPeriod }}<br>
+                            适用人群： {{ associatedmedicalInsurance.applicablePopulation }}<br><br>
+
+                            重疾覆盖额度：  {{ associatedmedicalInsurance.criticalIllness }}<br>
+                            紧急救援：  {{ associatedmedicalInsurance.emergencyAssistance }}<br>
+                            医疗覆盖额度：  {{ associatedmedicalInsurance.hospitalCoverage }}<br>
+                            门诊覆盖额度：  {{ associatedmedicalInsurance.outpatientCoverage }}<br>
+                            保险公司名称：  {{ associatedmedicalInsurance.companyName }}<br>
+                            手术覆盖额度：  {{ associatedmedicalInsurance.surgeryCoverage }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
-                        <span class="price">￥{{ associatedMedicalInsurance.price }}</span>
+                        <span class="price">￥{{ associatedmedicalInsurance.price }}</span>
                     </v-col>
                 </v-row>
             </v-card-item>
@@ -101,8 +101,8 @@ import { useRoute, useRouter } from 'vue-router';
 import { urlencodedInstance } from '@/axios';
 
 const medicalInsurance = ref({});
-const associatedMedicalInsurance = ref({});
-const nearestMedicalInsurance = ref({});
+const associatedmedicalInsurance = ref({});
+const nearestmedicalInsurance = ref({});
 const route = useRoute(); // 获取 route 对象
 const router = useRouter(); // 获取 router 对象
 
@@ -118,11 +118,11 @@ onMounted(async () => {
         medicalInsurance.value = response.data.data;
 
         const response2 = await urlencodedInstance.post('/medicalInsurance/getAssociatedMedicalInsurance', formData);
-        associatedMedicalInsurance.value = response2.data.data;
+        associatedmedicalInsurance.value = response2.data.data;
 
         const response3 = await urlencodedInstance.post('/medicalInsurance/getNearestMedicalInsurance', formData);
-        nearestMedicalInsurance.value = response3.data.data;
-        
+        nearestmedicalInsurance.value = response3.data.data;
+
     } catch (error) {
         console.error('Error:', error.response ? error.response.data : error.message);
     }
