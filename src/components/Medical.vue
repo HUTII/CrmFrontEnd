@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-card v-for="insurance in medicalInsurances" class="mb-5 cursor-pointer" :to="`/medical/${insurance.id}`">
-            
+
             <v-card-item>
                 <v-row>
                     <v-col cols="2">
@@ -10,15 +10,15 @@
                     <v-col cols="8">
                         <v-card-title>{{ insurance.planName }}</v-card-title>
                         <v-card-text class="pl-0">
-                            有效期限： {{ insurance.effectPeriod }}<br>
-                            适用年龄： {{ insurance.applicablePopulation }}<br><br>
-                            
-                            criticalIllness：  {{ insurance.criticalIllness }}<br>
-                            emergencyAssistance：  {{ insurance.emergencyAssistance }}<br>
-                            hospitalCoverage：  {{ insurance.hospitalCoverage }}<br>
-                            outpatientCoverage：  {{ insurance.outpatientCoverage }}<br>
-                            companyName：  {{ insurance.companyName }}<br>
-                            surgeryCoverage：  {{ insurance.surgeryCoverage }}<br>
+                            生效期限（单位：天）： {{ insurance.effectPeriod }}<br>
+                            适用人群： {{ insurance.applicablePopulation }}<br><br>
+
+                            重疾覆盖额度：  {{ insurance.criticalIllness }}<br>
+                            紧急救援：  {{ insurance.emergencyAssistance }}<br>
+                            医疗覆盖额度：  {{ insurance.hospitalCoverage }}<br>
+                            门诊覆盖额度：  {{ insurance.outpatientCoverage }}<br>
+                            保险公司名称：  {{ insurance.companyName }}<br>
+                            手术覆盖额度：  {{ insurance.surgeryCoverage }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
@@ -54,7 +54,7 @@ onMounted(async () => {
         }
         medicalInsurances.value = response.data.data;
         console.log(medicalInsurances.value);
-        
+
     } catch {
         console.log('Error');
     }
