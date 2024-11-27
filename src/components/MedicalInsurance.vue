@@ -33,24 +33,24 @@
             <v-card-item>
                 <v-row>
                     <v-col cols="2">
-                        <v-img :src="getImageSrc(nearestmedicalInsurance.id)" height="200" width="200"></v-img>
+                        <v-img :src="getImageSrc(nearestMedicalInsurance.id)" height="200" width="200"></v-img>
                     </v-col>
                     <v-col cols="8">
-                        <v-card-title>{{ nearestmedicalInsurance.planName }}</v-card-title>
+                        <v-card-title>{{ nearestMedicalInsurance.planName }}</v-card-title>
                         <v-card-text class="pl-0">
-                            有效期限： {{ nearestmedicalInsurance.effectPeriod }}<br>
-                            适用年龄： {{ nearestmedicalInsurance.applicablePopulation }}<br><br>
+                            有效期限： {{ nearestMedicalInsurance.effectPeriod }}<br>
+                            适用年龄： {{ nearestMedicalInsurance.applicablePopulation }}<br><br>
                             
-                            criticalIllness：  {{ nearestmedicalInsurance.criticalIllness }}<br>
-                            emergencyAssistance：  {{ nearestmedicalInsurance.emergencyAssistance }}<br>
-                            hospitalCoverage：  {{ nearestmedicalInsurance.hospitalCoverage }}<br>
-                            outpatientCoverage：  {{ nearestmedicalInsurance.outpatientCoverage }}<br>
-                            companyName：  {{ nearestmedicalInsurance.companyName }}<br>
-                            surgeryCoverage：  {{ nearestmedicalInsurance.surgeryCoverage }}<br>
+                            criticalIllness：  {{ nearestMedicalInsurance.criticalIllness }}<br>
+                            emergencyAssistance：  {{ nearestMedicalInsurance.emergencyAssistance }}<br>
+                            hospitalCoverage：  {{ nearestMedicalInsurance.hospitalCoverage }}<br>
+                            outpatientCoverage：  {{ nearestMedicalInsurance.outpatientCoverage }}<br>
+                            companyName：  {{ nearestMedicalInsurance.companyName }}<br>
+                            surgeryCoverage：  {{ nearestMedicalInsurance.surgeryCoverage }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
-                        <span class="price">￥{{ nearestmedicalInsurance.price }}</span>
+                        <span class="price">￥{{ nearestMedicalInsurance.price }}</span>
                     </v-col>
                 </v-row>
             </v-card-item>
@@ -62,24 +62,24 @@
             <v-card-item>
                 <v-row>
                     <v-col cols="2">
-                        <v-img :src="getImageSrc(associatedmedicalInsurance.id)" height="200" width="200"></v-img>
+                        <v-img :src="getImageSrc(associatedMedicalInsurance.id)" height="200" width="200"></v-img>
                     </v-col>
                     <v-col cols="8">
-                        <v-card-title>{{ associatedmedicalInsurance.planName }}</v-card-title>
+                        <v-card-title>{{ associatedMedicalInsurance.planName }}</v-card-title>
                         <v-card-text class="pl-0">
-                            有效期限： {{ associatedmedicalInsurance.effectPeriod }}<br>
-                            适用年龄： {{ associatedmedicalInsurance.applicablePopulation }}<br><br>
+                            有效期限： {{ associatedMedicalInsurance.effectPeriod }}<br>
+                            适用年龄： {{ associatedMedicalInsurance.applicablePopulation }}<br><br>
                             
-                            criticalIllness：  {{ associatedmedicalInsurance.criticalIllness }}<br>
-                            emergencyAssistance：  {{ associatedmedicalInsurance.emergencyAssistance }}<br>
-                            hospitalCoverage：  {{ associatedmedicalInsurance.hospitalCoverage }}<br>
-                            outpatientCoverage：  {{ associatedmedicalInsurance.outpatientCoverage }}<br>
-                            companyName：  {{ associatedmedicalInsurance.companyName }}<br>
-                            surgeryCoverage：  {{ associatedmedicalInsurance.surgeryCoverage }}<br>
+                            criticalIllness：  {{ associatedMedicalInsurance.criticalIllness }}<br>
+                            emergencyAssistance：  {{ associatedMedicalInsurance.emergencyAssistance }}<br>
+                            hospitalCoverage：  {{ associatedMedicalInsurance.hospitalCoverage }}<br>
+                            outpatientCoverage：  {{ associatedMedicalInsurance.outpatientCoverage }}<br>
+                            companyName：  {{ associatedMedicalInsurance.companyName }}<br>
+                            surgeryCoverage：  {{ associatedMedicalInsurance.surgeryCoverage }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
-                        <span class="price">￥{{ associatedmedicalInsurance.price }}</span>
+                        <span class="price">￥{{ associatedMedicalInsurance.price }}</span>
                     </v-col>
                 </v-row>
             </v-card-item>
@@ -101,8 +101,8 @@ import { useRoute, useRouter } from 'vue-router';
 import { urlencodedInstance } from '@/axios';
 
 const medicalInsurance = ref({});
-const associatedmedicalInsurance = ref({});
-const nearestmedicalInsurance = ref({});
+const associatedMedicalInsurance = ref({});
+const nearestMedicalInsurance = ref({});
 const route = useRoute(); // 获取 route 对象
 const router = useRouter(); // 获取 router 对象
 
@@ -118,10 +118,10 @@ onMounted(async () => {
         medicalInsurance.value = response.data.data;
 
         const response2 = await urlencodedInstance.post('/medicalInsurance/getAssociatedMedicalInsurance', formData);
-        associatedmedicalInsurance.value = response2.data.data;
+        associatedMedicalInsurance.value = response2.data.data;
 
         const response3 = await urlencodedInstance.post('/medicalInsurance/getNearestMedicalInsurance', formData);
-        nearestmedicalInsurance.value = response3.data.data;
+        nearestMedicalInsurance.value = response3.data.data;
         
     } catch (error) {
         console.error('Error:', error.response ? error.response.data : error.message);
