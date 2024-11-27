@@ -16,6 +16,10 @@ export default [
         component: () => import('@/components/Accident.vue')
     },
     {
+        path: '/accident/:id',
+        component: () => import('@/components/AccidentInsurance.vue')
+    },
+    {
         path:   'medical',
         component: () => import('@/components/Medical.vue')
     },
