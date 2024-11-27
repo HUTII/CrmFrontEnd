@@ -10,13 +10,13 @@
                     <v-col cols="8">
                         <v-card-title>{{ insurance.productName }}</v-card-title>
                         <v-card-text class="pl-0">
-                            productType： {{ insurance.productType }}<br><br>
+                            保险类型： {{ insurance.productType }}<br><br>
                             
-                            coverage：  {{ insurance.coverage }}<br>
-                            compensationLimit：  {{ insurance.compensationLimit }}<br>
-                            description：  {{ insurance.description }}<br>
-                            insuranceCompany：  {{ insurance.insuranceCompany }}<br>
-                            benefits：  {{ insurance.benefits }}<br>
+                            保障范围：  {{ insurance.coverage }}<br>
+                            赔付限额：  {{ insurance.compensationLimit }}元<br>
+                            产品描述：  {{ insurance.description }}<br>
+                            保险公司信息：  {{ insurance.insuranceCompany }}<br>
+                            本保险为您提供的好处：  {{ insurance.benefits }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">

@@ -9,13 +9,13 @@
                     <v-col cols="8">
                         <v-card-title>{{ carInsurance.productName }}</v-card-title>
                         <v-card-text class="pl-0">
-                            productType： {{ carInsurance.productType }}<br><br>
+                            保险类型： {{ carInsurance.productType }}<br><br>
                             
-                            coverage：  {{ carInsurance.coverage }}<br>
-                            compensationLimit：  {{ carInsurance.compensationLimit }}<br>
-                            description：  {{ carInsurance.description }}<br>
-                            insuranceCompany：  {{ carInsurance.insuranceCompany }}<br>
-                            benefits：  {{ carInsurance.benefits }}<br>
+                            保障类型：  {{ carInsurance.coverage }}<br>
+                            赔付限额：  {{ carInsurance.compensationLimit }}元<br>
+                            产品描述：  {{ carInsurance.description }}<br>
+                            保险公司信息：  {{ carInsurance.insuranceCompany }}<br>
+                            本保险为您提供的好处：  {{ carInsurance.benefits }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
@@ -36,13 +36,13 @@
                     <v-col cols="8">
                         <v-card-title>{{ associatedCarInsurance.productName }}</v-card-title>
                         <v-card-text class="pl-0">
-                            productType： {{ associatedCarInsurance.productType }}<br><br>
+                            保险类型： {{ associatedCarInsurance.productType }}<br><br>
                             
-                            coverage：  {{ associatedCarInsurance.coverage }}<br>
-                            compensationLimit：  {{ associatedCarInsurance.compensationLimit }}<br>
-                            description：  {{ associatedCarInsurance.description }}<br>
-                            insuranceCompany：  {{ associatedCarInsurance.insuranceCompany }}<br>
-                            benefits：  {{ associatedCarInsurance.benefits }}<br>
+                            保障类型：  {{ associatedCarInsurance.coverage }}<br>
+                            赔付限额：  {{ associatedCarInsurance.compensationLimit }}<br>
+                            产品描述：  {{ associatedCarInsurance.description }}<br>
+                            保险公司信息：  {{ associatedCarInsurance.insuranceCompany }}<br>
+                            本保险为您提供的好处：  {{ associatedCarInsurance.benefits }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
