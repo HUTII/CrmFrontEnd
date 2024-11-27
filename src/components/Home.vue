@@ -1,10 +1,10 @@
 <template>
     <v-container class="fill-height container-1 d-flex justify-center align-content-start position-relative">
         <v-img
-        class="position-absolute top-0 right-0"
-        width="500"
-        src="@/assets/home_backgroud.jpg"
-      />
+            class="position-absolute top-0 right-0"
+            width="500"
+            src="@/assets/home_backgroud.jpg"
+        />
         <v-card width="60%" height="150" :elevation="0" color="transparent" class="pt-10">
             <v-card-subtitle class="text-h5">
                 Welcome to Insurance App
@@ -43,6 +43,7 @@
                     <v-card
                         class="rounded-sm h-75 cursor-pointer"
                         border="t-xl"
+                        to="/accident"
                     >
                         <v-card-text>
                             <v-row>
@@ -65,7 +66,7 @@
                     <v-card
                         class="rounded-sm h-75 cursor-pointer"
                         border="t-xl"
-                        
+                        to="/medical"
                     >
                         <v-card-text>
                             <v-row>
@@ -86,6 +87,7 @@
                     <v-card
                         class="rounded-sm h-75 cursor-pointer"
                         border="t-xl"
+                        to="/car"
                     >
                         <v-card-text>
                             <v-row>
