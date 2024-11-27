@@ -38,15 +38,15 @@
                     <v-col cols="8">
                         <v-card-title>{{ nearestmedicalInsurance.planName }}</v-card-title>
                         <v-card-text class="pl-0">
-                            有效期限： {{ nearestmedicalInsurance.effectPeriod }}<br>
-                            适用年龄： {{ nearestmedicalInsurance.applicablePopulation }}<br><br>
+                            生效期限（单位：天）： {{ nearestmedicalInsurance.effectPeriod }}<br>
+                            适用人群： {{ nearestmedicalInsurance.applicablePopulation }}<br><br>
 
-                            criticalIllness：  {{ nearestmedicalInsurance.criticalIllness }}<br>
-                            emergencyAssistance：  {{ nearestmedicalInsurance.emergencyAssistance }}<br>
-                            hospitalCoverage：  {{ nearestmedicalInsurance.hospitalCoverage }}<br>
-                            outpatientCoverage：  {{ nearestmedicalInsurance.outpatientCoverage }}<br>
-                            companyName：  {{ nearestmedicalInsurance.companyName }}<br>
-                            surgeryCoverage：  {{ nearestmedicalInsurance.surgeryCoverage }}<br>
+                            重疾覆盖额度：  {{ nearestmedicalInsurance.criticalIllness }}<br>
+                            紧急救援：  {{ nearestmedicalInsurance.emergencyAssistance }}<br>
+                            医疗覆盖额度：  {{ nearestmedicalInsurance.hospitalCoverage }}<br>
+                            门诊覆盖额度：  {{ nearestmedicalInsurance.outpatientCoverage }}<br>
+                            保险公司名称：  {{ nearestmedicalInsurance.companyName }}<br>
+                            手术覆盖额度：  {{ nearestmedicalInsurance.surgeryCoverage }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
@@ -67,15 +67,15 @@
                     <v-col cols="8">
                         <v-card-title>{{ associatedmedicalInsurance.planName }}</v-card-title>
                         <v-card-text class="pl-0">
-                            有效期限： {{ associatedmedicalInsurance.effectPeriod }}<br>
-                            适用年龄： {{ associatedmedicalInsurance.applicablePopulation }}<br><br>
+                            生效期限（单位：天）： {{ associatedmedicalInsurance.effectPeriod }}<br>
+                            适用人群： {{ associatedmedicalInsurance.applicablePopulation }}<br><br>
 
-                            criticalIllness：  {{ associatedmedicalInsurance.criticalIllness }}<br>
-                            emergencyAssistance：  {{ associatedmedicalInsurance.emergencyAssistance }}<br>
-                            hospitalCoverage：  {{ associatedmedicalInsurance.hospitalCoverage }}<br>
-                            outpatientCoverage：  {{ associatedmedicalInsurance.outpatientCoverage }}<br>
-                            companyName：  {{ associatedmedicalInsurance.companyName }}<br>
-                            surgeryCoverage：  {{ associatedmedicalInsurance.surgeryCoverage }}<br>
+                            重疾覆盖额度：  {{ associatedmedicalInsurance.criticalIllness }}<br>
+                            紧急救援：  {{ associatedmedicalInsurance.emergencyAssistance }}<br>
+                            医疗覆盖额度：  {{ associatedmedicalInsurance.hospitalCoverage }}<br>
+                            门诊覆盖额度：  {{ associatedmedicalInsurance.outpatientCoverage }}<br>
+                            保险公司名称：  {{ associatedmedicalInsurance.companyName }}<br>
+                            手术覆盖额度：  {{ associatedmedicalInsurance.surgeryCoverage }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
