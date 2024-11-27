@@ -12,7 +12,7 @@
                 <v-btn variant="plain" to="/travel">Travel</v-btn>
                 <v-btn variant="plain" to="/accident">Accident</v-btn>
                 <v-btn variant="plain" to="/medical">Medical</v-btn>
-                <v-btn variant="plain" to="/">Car</v-btn>
+                <v-btn variant="plain" to="/car">Car</v-btn>
             </v-col>
             <v-col offset="3" cols="1" class="d-flex justify-end align-center align-content-center">
                 <v-chip>
