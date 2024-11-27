@@ -10,14 +10,14 @@
                     <v-col cols="8">
                         <v-card-title>{{ insurance.name }}</v-card-title>
                         <v-card-text class="pl-0">
-                            有效期限： {{ insurance.effectPeriod }}<br><br>
+                            有效期限： {{ insurance.effectPeriod }}天<br><br>
                             
-                            旅程阻碍保障：  {{ insurance.tripDelay }}<br>
-                            个人财产保障：  {{ insurance.personalProperty }}<br>
-                            医疗保障：  {{ insurance.medicalCoverage }}<br>
-                            个人责任：  {{ insurance.personalLiability }}<br>
-                            紧急救援：  {{ insurance.emergencyAssistance }}<br>
-                            意外死亡：  {{ insurance.accidentDeath }}<br>
+                            旅程阻碍保障：  {{ insurance.tripDelay }}元<br>
+                            个人财产保障：  {{ insurance.personalProperty }}元<br>
+                            医疗保障：  {{ insurance.medicalCoverage }}元<br>
+                            个人责任：  {{ insurance.personalLiability }}元<br>
+                            紧急救援：  {{ insurance.emergencyAssistance }}元<br>
+                            意外死亡：  {{ insurance.accidentDeath }}元<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">

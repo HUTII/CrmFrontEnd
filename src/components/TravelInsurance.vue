@@ -9,14 +9,14 @@
                     <v-col cols="8">
                         <v-card-title>{{ travelInsurance.name }}</v-card-title>
                         <v-card-text class="pl-0">
-                            有效期限： {{ travelInsurance.effectPeriod }}<br><br>
+                            有效期限： {{ travelInsurance.effectPeriod }}天<br><br>
                             
-                            旅程阻碍保障：  {{ travelInsurance.tripDelay }}<br>
-                            个人财产保障：  {{ travelInsurance.personalProperty }}<br>
-                            医疗保障：  {{ travelInsurance.medicalCoverage }}<br>
-                            个人责任：  {{ travelInsurance.personalLiability }}<br>
-                            紧急救援：  {{ travelInsurance.emergencyAssistance }}<br>
-                            意外死亡：  {{ travelInsurance.accidentDeath }}<br>
+                            旅程阻碍保障：  {{ travelInsurance.tripDelay }}元<br>
+                            个人财产保障：  {{ travelInsurance.personalProperty }}元<br>
+                            医疗保障：  {{ travelInsurance.medicalCoverage }}元<br>
+                            个人责任：  {{ travelInsurance.personalLiability }}元<br>
+                            紧急救援：  {{ travelInsurance.emergencyAssistance }}元<br>
+                            意外死亡：  {{ travelInsurance.accidentDeath }}元<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
@@ -28,7 +28,7 @@
         <br>
         <h4>类似商品</h4>
         <br>
-        <v-card>
+        <v-card :to="`/travel/${associatedTravelInsurance.id}`">
             <v-card-item>
                 <v-row>
                     <v-col cols="2">
@@ -37,14 +37,14 @@
                     <v-col cols="8">
                         <v-card-title>{{ associatedTravelInsurance.name }}</v-card-title>
                         <v-card-text class="pl-0">
-                            有效期限： {{ associatedTravelInsurance.effectPeriod }}<br><br>
+                            有效期限： {{ associatedTravelInsurance.effectPeriod }}天<br><br>
                             
-                            旅程阻碍保障：  {{ associatedTravelInsurance.tripDelay }}<br>
-                            个人财产保障：  {{ associatedTravelInsurance.personalProperty }}<br>
-                            医疗保障：  {{ associatedTravelInsurance.medicalCoverage }}<br>
-                            个人责任：  {{ associatedTravelInsurance.personalLiability }}<br>
-                            紧急救援：  {{ associatedTravelInsurance.emergencyAssistance }}<br>
-                            意外死亡：  {{ associatedTravelInsurance.accidentDeath }}<br>
+                            旅程阻碍保障：  {{ associatedTravelInsurance.tripDelay }}元<br>
+                            个人财产保障：  {{ associatedTravelInsurance.personalProperty }}元<br>
+                            医疗保障：  {{ associatedTravelInsurance.medicalCoverage }}元<br>
+                            个人责任：  {{ associatedTravelInsurance.personalLiability }}元<br>
+                            紧急救援：  {{ associatedTravelInsurance.emergencyAssistance }}元<br>
+                            意外死亡：  {{ associatedTravelInsurance.accidentDeath }}元<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
@@ -56,7 +56,7 @@
         <br>
         <h4>大家在买</h4>
         <br>
-        <v-card>
+        <v-card :to="`/travel/${nearestTravelInsurance.id}`">
             <v-card-item>
                 <v-row>
                     <v-col cols="2">
@@ -65,14 +65,14 @@
                     <v-col cols="8">
                         <v-card-title>{{ nearestTravelInsurance.name }}</v-card-title>
                         <v-card-text class="pl-0">
-                            有效期限： {{ nearestTravelInsurance.effectPeriod }}<br><br>
+                            有效期限： {{ nearestTravelInsurance.effectPeriod }}天<br><br>
                             
-                            旅程阻碍保障：  {{ nearestTravelInsurance.tripDelay }}<br>
-                            个人财产保障：  {{ nearestTravelInsurance.personalProperty }}<br>
-                            医疗保障：  {{ nearestTravelInsurance.medicalCoverage }}<br>
-                            个人责任：  {{ nearestTravelInsurance.personalLiability }}<br>
-                            紧急救援：  {{ nearestTravelInsurance.emergencyAssistance }}<br>
-                            意外死亡：  {{ nearestTravelInsurance.accidentDeath }}<br>
+                            旅程阻碍保障：  {{ nearestTravelInsurance.tripDelay }}元<br>
+                            个人财产保障：  {{ nearestTravelInsurance.personalProperty }}元<br>
+                            医疗保障：  {{ nearestTravelInsurance.medicalCoverage }}元<br>
+                            个人责任：  {{ nearestTravelInsurance.personalLiability }}元br>
+                            紧急救援：  {{ nearestTravelInsurance.emergencyAssistance }}元<br>
+                            意外死亡：  {{ nearestTravelInsurance.accidentDeath }}元<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
