@@ -11,12 +11,12 @@
                         <v-card-text class="pl-0">
                             有效期限： {{ accidentInsurance.effectPeriod }}<br><br>
                             
-                            accidentCoverage：  {{ accidentInsurance.accidentCoverage }}<br>
-                            disabilityCoverage：  {{ accidentInsurance.disabilityCoverage }}<br>
-                            emergencyAssistance：  {{ accidentInsurance.emergencyAssistance }}<br>
-                            emergencyAssistance：  {{ accidentInsurance.emergencyAssistance }}<br>
-                            outpatientCoverage：  {{ accidentInsurance.outpatientCoverage }}<br>
-                            personalLiability：  {{ accidentInsurance.personalLiability }}<br>
+                            意外保障：  {{ accidentInsurance.accidentCoverage }}<br>
+                            残疾保障：  {{ accidentInsurance.disabilityCoverage }}<br>
+                            紧急救援：  {{ accidentInsurance.emergencyAssistance }}<br>
+                            住院保障:   {{ accidentInsurance.hospitalCoverage}}<br>
+                            门诊保障：  {{ accidentInsurance.outpatientCoverage }}<br>
+                            个人责任：  {{ accidentInsurance.personalLiability }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
@@ -39,12 +39,12 @@
                         <v-card-text class="pl-0">
                             有效期限： {{ nearestAccidentInsurance.effectPeriod }}<br><br>
                             
-                            accidentCoverage：  {{ nearestAccidentInsurance.accidentCoverage }}<br>
-                            disabilityCoverage：  {{ nearestAccidentInsurance.disabilityCoverage }}<br>
-                            emergencyAssistance：  {{ nearestAccidentInsurance.emergencyAssistance }}<br>
-                            emergencyAssistance：  {{ nearestAccidentInsurance.emergencyAssistance }}<br>
-                            outpatientCoverage：  {{ nearestAccidentInsurance.outpatientCoverage }}<br>
-                            personalLiability：  {{ nearestAccidentInsurance.personalLiability }}<br>
+                            意外保障：  {{ nearestAccidentInsurance.accidentCoverage }}<br>
+                            残疾保障：  {{ nearestAccidentInsurance.disabilityCoverage }}<br>
+                            紧急救援：  {{ nearestAccidentInsurance.emergencyAssistance }}<br>
+                            住院保障: {{ nearestAccidentInsurance.hospitalCoverage}}<br>
+                            门诊保障：  {{ nearestAccidentInsurance.outpatientCoverage }}<br>
+                            个人责任：  {{ nearestAccidentInsurance.personalLiability }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">

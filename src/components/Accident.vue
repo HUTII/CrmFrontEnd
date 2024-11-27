@@ -12,12 +12,12 @@
                         <v-card-text class="pl-0">
                             有效期限： {{ insurance.effectPeriod }}<br><br>
                             
-                            意外保障：  {{ nearestAccidentInsurance.accidentCoverage }}<br>
-                            残疾保障：  {{ nearestAccidentInsurance.disabilityCoverage }}<br>
-                            紧急救援：  {{ nearestAccidentInsurance.emergencyAssistance }}<br>
-                            住院保障:   {{ nearestAccidentInsurance.hospitalCoverage}}<br>
-                            门诊保障：  {{ nearestAccidentInsurance.outpatientCoverage }}<br>
-                            个人责任：  {{ nearestAccidentInsurance.personalLiability }}<br>
+                            意外保障：  {{ insurance.accidentCoverage }}<br>
+                            残疾保障：  {{ insurance.disabilityCoverage }}<br>
+                            紧急救援：  {{ insurance.emergencyAssistance }}<br>
+                            住院保障：  {{ insurance.hospitalCoverage}}<br>
+                            门诊保障：  {{ insurance.outpatientCoverage }}<br>
+                            个人责任：  {{ insurance.personalLiability }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
