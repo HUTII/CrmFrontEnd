@@ -9,15 +9,15 @@
                     <v-col cols="8">
                         <v-card-title>{{ medicalInsurance.planName }}</v-card-title>
                         <v-card-text class="pl-0">
-                            有效期限： {{ medicalInsurance.effectPeriod }}<br>
-                            适用年龄： {{ medicalInsurance.applicablePopulation }}<br><br>
+                            生效期限（单位：天）： {{ medicalInsurance.effectPeriod }}<br>
+                            适用人群： {{ medicalInsurance.applicablePopulation }}<br><br>
 
-                            criticalIllness：  {{ medicalInsurance.criticalIllness }}<br>
-                            emergencyAssistance：  {{ medicalInsurance.emergencyAssistance }}<br>
-                            hospitalCoverage：  {{ medicalInsurance.hospitalCoverage }}<br>
-                            outpatientCoverage：  {{ medicalInsurance.outpatientCoverage }}<br>
-                            companyName：  {{ medicalInsurance.companyName }}<br>
-                            surgeryCoverage：  {{ medicalInsurance.surgeryCoverage }}<br>
+                            重疾覆盖额度：  {{ medicalInsurance.criticalIllness }}<br>
+                            紧急救援：  {{ medicalInsurance.emergencyAssistance }}<br>
+                            医疗覆盖额度：  {{ medicalInsurance.hospitalCoverage }}<br>
+                            门诊覆盖额度：  {{ medicalInsurance.outpatientCoverage }}<br>
+                            保险公司名称：  {{ medicalInsurance.companyName }}<br>
+                            手术覆盖额度：  {{ medicalInsurance.surgeryCoverage }}<br>
                         </v-card-text>
                     </v-col>
                     <v-col cols="2" class="align-content-end pb-8">
